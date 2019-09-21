@@ -25,7 +25,7 @@ public class EnvironmentalGame {
 		System.out.println("Let's make a move:");
 		boolean win = false;
 		boolean lose = false;
-		while(win==false && lose==false) {//while no one has won
+		while(win==false && lose==false) {
 			boolean continueTurn = true;
 			while(continueTurn ==true) {
 				playTurn();
@@ -51,6 +51,7 @@ public class EnvironmentalGame {
 			}
 			win = checkWin();
 			lose = checkLose();
+
 		}
 		if(win == true) {
 			System.out.println("Congrats! You have won the game!");
